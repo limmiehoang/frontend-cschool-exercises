@@ -1,3 +1,18 @@
+/* 
+    Color hexa code in sites:
+
+    Green: #9aaf24
+    News' background color: #fafafa
+    Text color: #454545
+    Heading upper color: #c9e23f -> #48e3dc
+    Border color: #c9e23f
+    special 'more detail' color: #c9e23f -> #47e3dc
+    'more detail' button: #eeeeee
+    news date background color: #333333
+    nav border color: #575757
+    news border: #eeeeee
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -6,8 +21,8 @@ body, html {
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: 'Roboto', Helvetica;
-    color: #333;
+    font-family: 'Montserrat', Helvetica;
+    color: #454545;
 }
 
 ul {
@@ -16,21 +31,36 @@ ul {
 }
 
 a {
-    color: #333;
+    color: #454545;
     text-decoration: none;
 }
 
 a:hover {
-    color: #658e3b;
+    color: #9aaf24;
+}
+
+a:active {
+    color: #9aaf24;
+}
+
+button {
+    border-width: 0;
+    font-family: HiraKakuProN, Montserrat;
+    font-weight: bold;
 }
 
 section {
     margin-bottom: 70px;
 }
 
+img {
+    max-width: 100%;
+}
+
 #main_wrapper {
     margin: 0 auto;
-    width: 1080px;
+    width: 80%;
+    max-width: 1080px;
     position: relative;
 }
 
@@ -50,14 +80,16 @@ section {
     position: absolute;
     top: 30px;
     right: 70px;
+    width: 22.5%;
 }
 
 .catch_copy>img {
-    width: 242px;
+    width: 100%;
 }
 
 .navigation {
     margin: 20px 0 30px;
+    font-size: 16pt;
 }
 
 .nav_list {
@@ -70,18 +102,18 @@ section {
 }
 
 .is_active>a {
-    color: #658e3b;
+    color: #9aaf24;
 }
 
 .news {
     padding: 30px 0;
-    background-color: ghostwhite;
-    border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
+    background-color: #fafafa;
+    border: 1px solid #eeeeee;
 }
 
 .news .news_wrapper {
-    width: 700px;
+    width: 70%;
+    min-width: 500px;
     margin: 0 auto;
 }
 
@@ -103,8 +135,9 @@ section {
 
 .news_date {
     width: 20%;
-    color: #fff;
-    background-color: #333;
+    min-width: 100px;
+    color: #ffffff;
+    background-color: #333333;
     padding: 5px 0;
 }
 
@@ -154,11 +187,44 @@ section {
 }
 
 .package_item {
-    width: 336px;
+    width: 30%;
+    border: 4px solid #c9e23f;
 }
 
-.package_img>img {
-    width: 336px;
+.package_item img {
+    width: 100%;
+}
+
+.package_item h3 {
+    font-size: 22pt;
+    margin: 34px 0;
+}
+
+.package_item .fee {
+    font-size: 29pt;
+    margin: 0 0 65px;
+}
+
+.package_item .description {
+    font-size: 14pt;
+    margin: 0 0 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.package_item .detail_button {
+    font-size: 14pt;
+    width: 80%;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #eeeeee;
+}
+
+.detail_button:hover {
+
+}
+
+.master {
+    background-image: linear-gradient(to right, #c9e23f, #47e3dc)
 }
 
 .item_list {
@@ -169,6 +235,10 @@ section {
 .item {
     width: 180px;
     height: 180px;
+}
+
+.item:hover {
+
 }
 
 .item>img {
