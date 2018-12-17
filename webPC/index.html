@@ -4,43 +4,46 @@
     <meta charset="utf-8" />
     <title>TAKAOSAN</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 <body>
-    <div id="main_wrapper">
-        <header class="site_header">
-            <h1 class="site_logo">
-                <a href="#">
-                    <img src="./assets/images/logo.png" alt="TAKAOSAN"> 
-                </a>
-            </h1>
-            <div class="main_image">
-                <p class="catch_copy"><img src="./assets/images/catchcopy.png" alt="WORD HARD, PLAY HARD"></p>
-                <img src="./assets/images/mainimage.png" alt="">
-            </div>
-            <nav class="navigation">
-                <ul class="nav_list">
-                    <li class="nav_item is_active">
-                        <a href="#">HOME</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#">ABOUT</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#">SHOP</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#">ACCESS</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#">BLOG</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#">CONTACT</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    
+    <header class="site_header">
+        <h1 class="site_logo main_wrapper">
+            <a href="#">
+                <img src="./assets/images/logo.png" alt="TAKAOSAN"> 
+            </a>
+            <i class="menu_icon fas fa-bars"></i>
+        </h1>
+        <div class="main_image main_wrapper">
+            <p class="catch_copy"><img src="./assets/images/catchcopy.png" alt="WORD HARD, PLAY HARD"></p>
+            <img src="./assets/images/mainimage.png" alt="">
+        </div>
+        <nav class="navigation main_wrapper">
+            <ul class="nav_list">
+                <li class="nav_item is_active">
+                    <a href="#">HOME</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">ABOUT</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">SHOP</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">ACCESS</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">BLOG</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main_wrapper">
         <main class="main">
             <section class="news">
                 <div class="news_wrapper">
@@ -88,8 +91,10 @@
                     <h2>FEATURES</h2>
                 </header>
                 <div class="feature_blk">
-                    <img src="./assets/images/features-image.jpg" alt="">
-                    <div class="feature">
+                    <div class="feature_item">
+                        <img src="./assets/images/features-image.jpg" alt="">
+                    </div>
+                    <div class="feature feature_item">
                         <h2 class="feature_title">
                             Waterproof for the outdoor scene
                         </h2>
@@ -187,7 +192,7 @@
             </section>
         </main>
         <footer class="site_footer">
-            <small>COPYRIGHT TAKAOSAN ALL RIGHT RESERVED.</small>
+            <p><small>COPYRIGHT TAKAOSAN ALL RIGHT RESERVED.</small></p>
         </footer>
     </div>
 </body>
