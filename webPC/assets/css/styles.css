@@ -312,7 +312,7 @@ img {
     .main_wrapper {
         width: 95%;
         margin: 0 auto;
-        min-width: 342px;
+        min-width: 310px;
     }
     .package_list,
     .news_item,
