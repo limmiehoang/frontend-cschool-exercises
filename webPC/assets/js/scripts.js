@@ -11,8 +11,9 @@ $(document).ready(function() {
         if (windowsize > 768) {
             $(".navigation").show();
         }
-        if (windowsize <= 768) {
+        else {
             $(".navigation").hide();
+            console.log("hide");
         }
     }
     // Execute on load
@@ -20,4 +21,3 @@ $(document).ready(function() {
     // Bind event listener
     $(window).resize(checkWidth);
 });
-console.log($(document).height());
