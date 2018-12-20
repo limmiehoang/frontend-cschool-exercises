@@ -40,7 +40,8 @@ section {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .main_wrapper {
@@ -59,10 +60,12 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: .5em 0;
+    height: 100%;
 }
 
 .site_logo a {
     line-height: 0;
+    height: 100%;
 }
 
 .menu_icon {
@@ -313,6 +316,10 @@ img {
         z-index: 1000;
         height: 2.75rem;
     }
+    .menu_icon {
+        display: inline-block;
+        cursor: pointer;
+    }
     .main_image {
         top: 2.75rem;
     }
@@ -352,10 +359,6 @@ img {
     .news_item,
     .feature_blk {
         flex-direction: column;
-    }
-    .menu_icon {
-        display: inline;
-        cursor: pointer;
     }
     .main_image,
     .news_title {
