@@ -359,7 +359,7 @@ img {
     .feature_blk {
         flex-direction: column;
     }
-    .main_image,
+    .site_header .main_image,
     .news_title {
         width: 100%;
     }
