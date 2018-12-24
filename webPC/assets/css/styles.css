@@ -310,6 +310,10 @@ img {
     body {
         font-size: 0.9rem;
     }
+    .main_wrapper {
+        width: 87.5%;
+        min-width: 310px;
+    }
     .site_logo {
         width: 100%;
         position: fixed;
@@ -350,11 +354,6 @@ img {
     .nav_item a {
         font-size: 1em;
     }
-    .main_wrapper {
-        width: 95%;
-        margin: 0 auto;
-        min-width: 310px;
-    }
     .package_list,
     .news_item,
     .feature_blk {
@@ -387,5 +386,15 @@ img {
     }
     .item {
         flex: 1 33.33%;
+    }
+    .item_list {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 451px) {
+    .main_wrapper {
+        width: 95%;
     }
 }
