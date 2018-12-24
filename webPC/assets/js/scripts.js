@@ -19,3 +19,9 @@ $(".menu_icon").on('click', function() {
     $(".navigation")
         .toggle();
 });
+
+// Active on the current item in navigation bar
+$(".navigation").on('click', 'li', function() {
+    $(".navigation li").removeClass("is_active");
+    $(this).addClass("is_active");
+});
